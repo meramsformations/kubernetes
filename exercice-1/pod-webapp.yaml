@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    app: webapp
+  name: webapp
+spec:
+  containers:
+  - name: httpd
+    image: httpd
+    command: ['sh']
+    args: ['-c', 'while true; do echo `date` - conteneur httpd; sleep 5; done']
+  - name: tomcat
+    image: tomcat444
+    command: ['sh']
+    args: ['-c', 'while true; do echo "`date` - conteneur tomcat"; sleep 5; done']
