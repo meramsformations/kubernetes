@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rabbit
+  namespace: default
+spec:
+  containers:
+  - args:
+    - sleep
+    - "3600"
+    image: ubuntu
+    name: rabbit
+    resources:
+      limits:
+        cpu: "200m"
+      requests:
+        cpu: "100m"
