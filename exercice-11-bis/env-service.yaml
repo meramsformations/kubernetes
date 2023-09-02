@@ -1,0 +1,11 @@
+kind: Service 
+apiVersion: v1 
+metadata:
+  name: env-svc
+spec:
+  type: NodePort
+  selector:
+    nom-application: listenv 
+  ports:
+    - port: 8080 
+      targetPort: 8080
