@@ -8,7 +8,9 @@ spec:
   containers:
   - image: httpd
     name: carmin
-  - image: nginx
+  - image: tomcat
     name: vermillon
-  - image: nginx:2.4
+  - image: ubuntu
     name: pourpre
+    command: ["bash"]
+    args: ["-c", "sleep 10800"]

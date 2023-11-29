@@ -8,5 +8,5 @@ spec:
   containers:
   - image: httpd
     name: ciel
-  - image: nginx
+  - image: tomcat
     name: azur
