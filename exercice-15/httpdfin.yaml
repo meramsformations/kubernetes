@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    tier: front
+    bu: finance
+  name: httpdfin
+spec:
+  containers:
+  - image: httpd
+    name: httpdfin

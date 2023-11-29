@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    tier: back
+    bu: finance
+  name: tomcatfin
+spec:
+  containers:
+  - image: tomcat
+    name: tomcatfin

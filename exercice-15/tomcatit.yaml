@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    tier: back
+    bu: it
+  name: tomcatit
+spec:
+  containers:
+  - image: tomcat
+    name: tomcatit
