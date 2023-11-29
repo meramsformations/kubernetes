@@ -17,3 +17,5 @@ kubectl apply -f ~/kubernetes/exercice-15/httpdfin.yaml
 kubectl apply -f ~/kubernetes/exercice-15/tomcatmark.yaml
 kubectl apply -f ~/kubernetes/exercice-15/tomcatit.yaml
 kubectl apply -f ~/kubernetes/exercice-15/tomcatfin.yaml
+kubectl apply -f ~/kubernetes/exercice-15/deployfront.yaml
+kubectl apply -f ~/kubernetes/exercice-15/deployback.yaml

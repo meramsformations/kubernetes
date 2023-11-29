@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: deployback
+    tier: back
+    bu: finance
+  name: deployback
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deployback
+  template:
+    metadata:
+      labels:
+        app: deployback
+        tier: back
+        bu: finance
+    spec:
+      containers:
+      - image: tomcat
+        name: deployback

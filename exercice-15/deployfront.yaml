@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: deployfront
+    tier: front
+    bu: finance
+  name: deployfront
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: deployfront
+  template:
+    metadata:
+      labels:
+        app: deployfront
+        tier: front
+        bu: finance
+    spec:
+      containers:
+      - image: httpd
+        name: deployfront
