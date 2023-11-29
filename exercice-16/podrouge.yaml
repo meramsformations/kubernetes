@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    couleur: rouge
+  name: rouge
+spec:
+  containers:
+  - image: httpd
+    name: carmin
+  - image: nginx
+    name: vermillon
+  - image: nginx:2.4
+    name: pourpre

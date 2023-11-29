@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    couleur: bleu
+  name: bleu
+spec:
+  containers:
+  - image: httpd
+    name: ciel
+  - image: nginx
+    name: azur
