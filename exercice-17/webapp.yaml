@@ -23,3 +23,8 @@ spec:
         image: meramsform/rollout:1.0
         ports:
         - containerPort: 8080
+        readinessProbe:
+          exec:
+            command:
+            - /bin/sh
+            - /opt/app/ready.sh
