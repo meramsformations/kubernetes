@@ -6,6 +6,10 @@ metadata:
     app: webapp
 spec:
   replicas: 4
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
   selector:
     matchLabels:
       app: webapp
