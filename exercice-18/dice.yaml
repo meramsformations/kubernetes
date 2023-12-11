@@ -1,0 +1,13 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: dice
+spec:
+  completions: 2
+  backoffLimit: 5
+  template:
+    spec:
+      containers:
+      - image: meramsform/dice
+        name: dice
+      restartPolicy: Never
