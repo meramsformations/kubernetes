@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: frontend
+  name: frontend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      volumes:
+        - name: cm-frontend-volume
+          configMap:
+            name: cm-frontend
+      containers:
+        - image: httpd
+          name: frontend
+          volumeMounts:
+          - name: cm-frontend-volume
+            mountPath: "/usr/local/apache2/conf/httpd.conf"
+            subPath: "httpd.conf"
+        
