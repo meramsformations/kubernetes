@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cache
+spec:
+  containers:
+  - image: redis
+    name: caching
+  - image: httpd
+    name: front

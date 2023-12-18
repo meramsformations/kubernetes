@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    tier: front
+    bu: finance
+  name: front-fin
+spec:
+  containers:
+  - image: httpd:alpine
+    name: httpd

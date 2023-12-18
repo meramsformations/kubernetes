@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    tier: front
+    bu: it
+  name: front-it
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: front
+      bu: it
+  template:
+    metadata:
+      labels:
+        tier: front
+        bu: it
+    spec:
+      containers:
+      - image: httpd
+        name: httpd

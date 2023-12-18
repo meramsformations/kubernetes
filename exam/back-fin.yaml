@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    tier: back
+    bu: finance
+  name: back-fin
+spec:
+  containers:
+  - image: tomcat
+    name: tomcat
+    resources:
+      limits:
+        memory: "128Mi"
+      requests:
+        memory: "64Mi"

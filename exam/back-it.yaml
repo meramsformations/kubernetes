@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    tier: back
+    bu: it
+  name: back-it
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      tier: back
+      bu: it
+  template:
+    metadata:
+      labels:
+        tier: back
+        bu: it
+    spec:
+      containers:
+      - image: tomcat
+        name: tomcat

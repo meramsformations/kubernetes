@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: db-fin
+data:
+  DATABASEUSER: c3lzdGVtCg==
+  DATABASEPWD: Y2hhbmdlbWUK
