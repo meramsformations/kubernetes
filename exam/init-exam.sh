@@ -72,3 +72,5 @@ kubectl apply -f ~/kubernetes/exam/db-fin.yaml
 kubectl apply -f ~/kubernetes/exam/cache.yaml
 kubectl apply -f ~/kubernetes/exam/front-fin-srv.yaml
 kubectl apply -f ~/kubernetes/exam/back-fin-srv.yaml
+kubectl apply -f ~/kubernetes/exam/role.yaml
+kubectl apply -f ~/kubernetes/exam/rb.yaml
